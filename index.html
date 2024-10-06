@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SMACSS Example</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SMACSS Example</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to SMACSS</h1>
-    <p>This is a simple example of a webpage built using SMACSS principles.</p>
-    <button class="button button--primary">Learn More</button>
-  </div>
+    <header class="site-header">
+        <h1>Welcome to SMACSS Example</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 class="card-title">Card Title 1</h2>
+            <p class="card-description">This is a reusable card component based on SMACSS principles.</p>
+        </section>
+
+        <section class="card card--active">
+            <h2 class="card-title">Card Title 2</h2>
+            <p class="card-description">Another instance of a card component in an active state.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2024 SMACSS Example</p>
+    </footer>
 </body>
 </html>
